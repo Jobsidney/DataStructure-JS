@@ -19,3 +19,30 @@ address[morningMeal]="French fries";
   //adding new value
   address.town="kisumu";
   console.log(address);
+
+
+  //OBJECTS METHODS
+  const wednesdayMenu = {
+    cheesePlate: {
+      soft: "Brie",
+      semiSoft: "Fontina",
+      hard: "Provolone",
+    },
+    fries: "Sweet potato",
+    salad: "Southwestern",
+  };
+
+  //to know the keys in the object
+  console.log(Object.keys(wednesdayMenu));
+
+  //to know the values in the object
+  console.log(Object.values(wednesdayMenu));
+
+  //function to modify OBjects
+  function updateObject(obj, key, value) {
+    obj[key] = value; //Why are we using bracket notation here?
+  
+    return obj;
+  }
+  updateObject(wednesdayMenu,"travel","Dubai");
+  console.log(wednesdayMenu);

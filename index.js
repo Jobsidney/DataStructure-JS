@@ -14,6 +14,9 @@ function addingItemBegin(name){
 //Creating copy of an ARRAY
 const newArray=[...superheroes];
 console.log(newArray);
+//we can copy that array and also add something to it at that time
+const newAddedArray=["newYork","Nairobi",...superheroes]
+console.log(newAddedArray);
 
 
 //calling the functions

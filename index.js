@@ -53,14 +53,27 @@ function slicingItems(num1,num2){
     console.log(family.slice(num1,num2));
 }
 
+//SPLICE() methodon ARRAYS
 
+const months =["January","February","March","April","May","June","July","August"]
+
+//remove first two items
+function splicing(){
+    months.splice(2);
+    console.log(months);
+}
+
+
+//remove last two elements
+console.log(months.splice(-3));
+splicing();
 
 //calling the functions
-addItem("SuperMan");
-addingItemBegin("SpiderMan");
-removeLast();
-removeFirst();
-slicingItems(1);
-console.log(days.slice(0,-1));
+// addItem("SuperMan");
+// addingItemBegin("SpiderMan");
+// removeLast();
+// removeFirst();
+// slicingItems(1);
+// console.log(days.slice(0,-1));
 
 

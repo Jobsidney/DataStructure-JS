@@ -62,18 +62,27 @@ function splicing(){
     months.splice(2);
     console.log(months);
 }
+const menu = [
+    "Jalapeno Poppers",
+    "Cheeseburger",
+    "Fish and Chips",
+    "French Fries",
+    "Onion Rings",
+  ];
+  menu.splice(1,2,"becon","pizza");
+  console.log(menu);
 
 
 //remove last two elements
 console.log(months.splice(-3));
 splicing();
 
-//calling the functions
-// addItem("SuperMan");
-// addingItemBegin("SpiderMan");
-// removeLast();
-// removeFirst();
-// slicingItems(1);
-// console.log(days.slice(0,-1));
+// calling the functions
+addItem("SuperMan");
+addingItemBegin("SpiderMan");
+removeLast();
+removeFirst();
+slicingItems(1);
+console.log(days.slice(0,-1));
 
 

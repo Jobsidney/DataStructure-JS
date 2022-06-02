@@ -44,6 +44,15 @@ function removeFirst(){
 }
 
 
+//USING SLICE()
+const family = ["Ann","Stephany","Jovan","Dad","Mum"];
+const familyCopy=[...family];
+const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+function slicingItems(num1,num2){
+    console.log(family.slice(num1,num2));
+}
+
 
 
 //calling the functions
@@ -51,3 +60,7 @@ addItem("SuperMan");
 addingItemBegin("SpiderMan");
 removeLast();
 removeFirst();
+slicingItems(1);
+console.log(days.slice(0,-1));
+
+

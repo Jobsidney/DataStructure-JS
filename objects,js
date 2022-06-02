@@ -1,0 +1,21 @@
+//OBJECT
+const address = {
+    street: {
+      line1: "11 Broadway",
+      line2: "2nd Floor",
+    },
+    city: "New York",
+    state: "NY",
+    zipCode: "10004",
+  };
+
+
+  //this []will tell Js to interpret the value of variable first
+const morningMeal = "breakfast";
+address[morningMeal]="French fries";
+
+  //TO ACCESS ITS DATA
+  console.log(address.city);
+  //adding new value
+  address.town="kisumu";
+  console.log(address);

@@ -46,3 +46,25 @@ address[morningMeal]="French fries";
   }
   updateObject(wednesdayMenu,"travel","Dubai");
   console.log(wednesdayMenu);
+
+const mondayMenu = {
+    cheesePlate: {
+      soft: "Chèvre",
+      semiSoft: "Gruyère",
+      hard: "Manchego",
+    },
+    fries: "Sweet potato",
+    salad: "Cobb",
+  };
+  
+  //makes copy of object and adds value to new copied object
+  function nondestructivelyUpdateObject(obj, key, value) {
+    const newObj = { ...obj };
+  
+    newObj[key] = value;
+  
+    return newObj;
+  }
+  const thurs=nondestructivelyUpdateObject(mondayMenu,"drinks","fanta");
+  console.log(thurs);
+  console.log(mondayMenu);
